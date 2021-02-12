@@ -68,6 +68,11 @@ class Visualizer(HttpUser):
     wait_time = between(3,5)
 
 
+class Visualizer2(HttpUser):
+    host = HOST
+    tasks = [DefVisualizer]
+    wait_time = between(3,5)
+
 
 class Voters(HttpUser):
     host = HOST
